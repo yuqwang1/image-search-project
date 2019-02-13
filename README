@@ -1,0 +1,5 @@
+1. Clone the repository
+2. run 'npm install'
+3. run 'npm start'
+4. On the browser, click 'send link with email'
+5. Use smartphone to open the link, launch EXPO app. 
