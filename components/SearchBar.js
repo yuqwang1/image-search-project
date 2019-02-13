@@ -20,9 +20,11 @@ class SearchBar extends Component {
       placeholder="What's your favorite picture"
       value={ this.state.text }
       onChangeText={ text => this.setState({ text })}
-      
       />
-      <Button buttonStyle={ buttonStyle } title='Search' onPress={ () => this.props.onPressSearch(this.state.text) }/>
+      <Button
+        buttonStyle={ buttonStyle }
+        title={ this.props.loading ? 'Loading...' : 'Search' } 
+        onPress={ () => this.props.onPressSearch(this.state.text) }/>
       </View>
 
     )
